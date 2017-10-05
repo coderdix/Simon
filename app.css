@@ -1,0 +1,101 @@
+body {
+  background-color: #000;
+}
+
+.lens {
+  position: relative;
+  width: 50vw;
+  height: 50vh;
+  float: left;
+  cursor: pointer;
+}
+
+.green {
+  background-color: #028A40;
+  -webkit-transition: background-color 0.5s
+}
+
+.green.glow {
+  background-color: #39FD8F;
+}
+
+.red {
+  background-color: #9C131A;
+  -webkit-transition: background-color 0.5s
+}
+
+.red.glow {
+  background-color: #FC5E5F;
+}
+
+.yellow {
+  background-color: #C9A60C;
+  -webkit-transition: background-color 0.5s
+}
+
+.yellow.glow {
+  background-color: #FFFD38;
+}
+
+.blue {
+  background-color: #1E8DFF;
+  -webkit-transition: background-color 0.5s
+}
+
+.blue.glow {
+  background-color: #4fa8ff
+}
+
+.status {
+  position: absolute;
+  width: 20rem;
+  left: 50%;
+  top: 50%;
+  margin-top: -2.5rem;
+  margin-left: -10rem;
+  background-color: rgba(68, 68, 68, 0.9);
+  box-shadow: 1px 3px 9px #666;
+  z-index: 999;
+  height: 70px;
+  line-height: 70px;
+  color: #fff;
+  font-size: 1rem;
+}
+
+.game {
+  width: 50vw;
+  margin: 0 auto;
+  color: #fff;
+}
+
+.game > div > span {
+  font-size: 0.8rem
+}
+
+.controls > button {
+  font-size: 12px;
+  cursor: pointer;
+}
+
+.logo {
+  font-size: 3rem;
+  font-family: 'Lobster', cursive;
+  text-align: center;
+  margin: 0 auto;
+}
+
+.display {
+  width: 3rem;
+  margin: 0 auto;
+  padding: 0.3rem 0;
+  background-color: #545454;
+  border-radius: 8px;
+}
+
+.fixed-bottom {
+  position: fixed;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  z-index: 1030;
+}

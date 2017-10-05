@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Simon</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
+		<!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/css/bootstrap.min.css" integrity="sha384-/Y6pD6FV/Vv2HJnA6t+vslU6fwYXjCFtcEpHbNJ0lyAFsXTsjBbfaDjzALeQsN6M" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css?family=Lobster" rel="stylesheet">
+		<link rel="stylesheet" href="app.css">
+  </head>
+  <body>
+    <nav class="navbar fixed-bottom bg-dark">
+      <div class="container">
+        <div class="game row">
+          <div class="col-3 pt-1 text-center">
+            <span>Play</span>
+            <div class="controls mt-1">
+              <button type="button" id="start" class="btn btn-sm btn-success">Start</button>
+              <button type="button" id="reset" class="btn btn-sm btn-outline-danger">Reset</button>
+            </div>
+          </div>
+          <div class="col-6 logo">Simon</div>
+          <div class="col-3 pt-1 text-center">
+            <span>Round</span>
+            <div class="display">
+              <span id="round" class="text-danger">--</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </nav>
+    <section>
+      <div id="bg" class="clearfix">
+        <div class="status text-center"></div>
+        <div class="lens green" value="green"></div>
+        <div class="lens red" value="red"></div>
+        <div class="lens yellow" value="yellow"></div>
+        <div class="lens blue" value="blue"></div>
+      </div>
+    </section>
+    <audio id="click">
+    	<source src="button_tiny.mp3"></source>
+    	Your browser isn't invited for super fun audio time.
+    </audio>
+    <audio id="sound">
+      <source src="tap.mp3"></source>
+    </audio>
+
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.11.0/umd/popper.min.js" integrity="sha384-b/U6ypiBEHpOf/4+1nzFpr53nxSS+GLCkfwBdFNTxtclqqenISfwAzpKaMNFNmj4" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/js/bootstrap.min.js" integrity="sha384-h0AbiXch4ZDo7tp9hKZ4TsHbi047NrKGLO3SEJAg45jXxnGIfYzk4Si90RDIqNm1" crossorigin="anonymous"></script>
+		<script src="app.js"></script>
+  </body>
+</html>

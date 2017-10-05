@@ -1,0 +1,30 @@
+Simon Game
+
+// Variables
+rest - boolean
+activeGame - boolean
+userSequence - object
+simonSequence - object
+colorButtons - array
+inputState - array
+outputState - array
+round - object
+
+
+// Layout Elements
+Create 3 buttons with equal class names & unique  (color)
+Create round ticker / display
+Create start button
+Create strict mode button
+
+// User Story 
+User can start game by clicking a button
+Game sends users a sequence of button patterns - buttons light up / make sound
+Input button sequence (from index 0)
+  If matches - recurse to step 2 + 1
+  If mistake - stop, alert of error, reset option
+If user makes it to round 10, then alert of win, and provide option for rest
+
+
+// Facts
+Go 10 rounds then game ends with a user win
